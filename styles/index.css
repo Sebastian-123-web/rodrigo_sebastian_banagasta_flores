@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+
+html {
+    height: 2000px;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #151316;
+}
+
+.container {
+    width: 1024px;
+    margin: auto;
+}
+
+/* ************************ */
+/*  UNIVERSO CON ESTRELLAS  */
+/* ************************ */
+.universe{
+    position: absolute;
+    z-index: -10;
+}
+.universe span {
+    position: absolute;
+    width: 4px;
+    height: 5px;
+    border-radius: 50%;
+    background: #ffffff6a;
+    -webkit-box-shadow: 0px 0px 113px 8px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 113px 8px rgba(255,255,255,1);
+    box-shadow: 0px 0px 113px 8px rgba(255,255,255,1);
+}
+
+
+/* ************************ */
+/* ESTILOS DE LA NAVEGACION */
+/* ************************ */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+.logo {
+    transition: 0.5s;
+}
+.logo:hover {
+    background-color: rgba(20, 160, 202, 0.181);
+    -webkit-box-shadow: 0px 0px 107px 12px rgba(20, 160, 202, 0);
+    -moz-box-shadow: 0px 0px 107px 12px rgba(20,159,202,1);
+    box-shadow: 0px 0px 107px 12px rgba(20,159,202,1);
+}
+.navegation ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+.navegation ul li{
+    list-style: none;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+.navegation ul li:hover{
+    background-color: rgba(20, 160, 202, 0.181);
+    -webkit-box-shadow: 0px 0px 107px 12px rgba(20, 160, 202, 0);
+    -moz-box-shadow: 0px 0px 107px 12px rgba(20,159,202,1);
+    box-shadow: 0px 0px 107px 12px rgba(20,159,202,1);
+}
+.navegation ul li a {
+    text-decoration: none;
+    padding: 20px 25px;
+}
