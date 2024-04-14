@@ -161,6 +161,9 @@ section .container {
 .description-dev{
     padding-left: 100px;
 }
+.description-dev h1 {
+    font-size: 1.7rem;
+}
 .name-dev{
     color: #149fca;
     font-weight: 700;
