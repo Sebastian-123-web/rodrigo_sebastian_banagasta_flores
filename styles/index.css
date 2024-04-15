@@ -15,6 +15,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: #151316;
+    overflow-x: hidden;
 }
 
 .container {

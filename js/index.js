@@ -2,9 +2,9 @@
 // CONFIGURACION DE ESTRELLAS EN LA PANTALLA
 const star = document.getElementsByClassName('universe')
 
-const t_monitor = document.documentElement.scrollHeight - 150
+const t_monitor = document.documentElement.scrollHeight
 const t_monitor_medio = t_monitor / 2
-const l_monitor = document.documentElement.scrollWidth - 150
+const l_monitor = document.documentElement.scrollWidth
 const l_monitor_medio = l_monitor / 2
 
 let l_random = Number
