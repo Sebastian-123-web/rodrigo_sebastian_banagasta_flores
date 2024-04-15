@@ -347,7 +347,50 @@ section {
     .description-dev p {
         text-align: center;
     }
-    main {
-        display: none;
+    .social {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    
+    
+    .sub-title {
+        text-align: center;
+    }
+
+    main .container {
+        width: calc(100% - 30px);
+        padding: 0 15px;
+    }
+
+    .project {
+        width: 100%;
+    }
+    .title-project {
+        flex-direction: column;
+    }
+    .title-project h3 {
+        font-size: 0.9;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .galery-projects {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .description-project {
+        width: 100%;
+    }
+
+    .link-image{
+        height: auto;
+    }
+    .img-project {
+        width: 100%;
+        height: auto;
+    }
+    .img-project img{
+        width: 100%;
+        object-fit:cover;
     }
 }
