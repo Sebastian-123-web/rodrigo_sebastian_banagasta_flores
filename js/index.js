@@ -11,7 +11,11 @@ let l_random = Number
 let t_random = Number
 let valor_scroll = String
 let stars = []
-for (let i = 1; i <= 80; i++) {
+
+let starLot = 130
+
+if(document.documentElement.scrollWidth <= 767) starLot = 40
+for (let i = 1; i <= starLot; i++) {
     l_random = Math.random() * l_monitor
     t_random = Math.random() * t_monitor
     if(l_random>l_monitor_medio && t_random>t_monitor_medio){valor_scroll = 'star-scroll-right-top'}
