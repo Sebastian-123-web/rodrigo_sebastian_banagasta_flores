@@ -1,58 +1,45 @@
 
-export const project = [{
-    title : "",
-    description : "",
-    urlimage : "",
-    urlWeb: "",
-    urlGithub : "",
-    technology : [
-        {
-            name: "HTML",
-            color: "#e96228"
-        },
-        {
-            name: "css",
-            color: "#0091d5"
-        },
-        {
-            name: "Javacript",
-            color: "#efd81d"
-        },
-        {
-            name: "React",
-            color: "#1399c4"
-        },
-        {
-            name: "Angular",
-            color: "#d6002f"
-        },
-        {
-            name: "Bootstrap",
-            color: "#8411f6"
-        },
-        {
-            name: "Tailwind",
-            color: "#36b7f0"
-        },
-        {
-            name: "Figma",
-            color: "#ea4c1d"
-        },
-        {
-            name: "Node",
-            color: "#86be00"
-        },
-        {
-            name: "Express",
-            color: "#353535"
-        },
-        {
-            name: "Mysql",
-            color: "#00718b"
-        },
-        {
-            name: "PHP",
-            color: "#7377ad"
-        },
-    ]
-}]
+const project = () => [
+    {
+        title : "Silla -  Ataraxia Requintado",
+        description : "UN ASIENTO que A LA VEZ ES una pieza de arte en sí misma. Las curvas y las líneas del diseño SON elegantes y fluidas, tomando inspiración de la glicina en su aspecto más bello.",
+        urlimage : "https://i.postimg.cc/sgqRGT3c/Captura.png",
+        urlWeb: "https://ataraxia-requintado.vercel.app/",
+        urlGithub : "https://github.com/Sebastian-123-web/AtaraxiaRequintado",
+        technology : [
+            {
+                name: "HTML",
+                color: "#e96228"
+            },
+            {
+                name: "css",
+                color: "#0091d5"
+            },
+            {
+                name: "Figma",
+                color: "#ea4c1d"
+            }
+        ]
+    },
+    {
+        title : "Boris the Teddy",
+        description : "El compañero diseñado especialmente para niños con Síndrome de Espectro Autista.",
+        urlimage : "https://i.postimg.cc/y6JRGxrt/boris.jpg",
+        urlWeb: "https://boris-the-teddy.vercel.app/",
+        urlGithub : "https://github.com/Sebastian-123-web/BoristheTeddy",
+        technology : [
+            {
+                name: "HTML",
+                color: "#e96228"
+            },
+            {
+                name: "css",
+                color: "#0091d5"
+            },
+            {
+                name: "Figma",
+                color: "#ea4c1d"
+            }
+        ]
+    }
+]

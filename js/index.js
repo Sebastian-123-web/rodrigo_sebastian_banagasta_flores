@@ -31,3 +31,86 @@ for (let i = 1; i <= 130; i++) {
             ` 
 }
 star[0].innerHTML = stars
+
+
+
+// DATOS DE LOS PROYECTOS PARA INSERTAR EN EL HTML
+
+const dataProjects = [
+    {
+        title : "Silla -  Ataraxia Requintado",
+        description : "UN ASIENTO que A LA VEZ ES una pieza de arte en sí misma. Las curvas y las líneas del diseño SON elegantes y fluidas, tomando inspiración de la glicina en su aspecto más bello.",
+        urlimage : "https://i.postimg.cc/sgqRGT3c/Captura.png",
+        urlWeb: "https://ataraxia-requintado.vercel.app/",
+        urlGithub : "https://github.com/Sebastian-123-web/AtaraxiaRequintado",
+        technology : [
+            {
+                name: "HTML",
+                color: "#e96228"
+            },
+            {
+                name: "css",
+                color: "#0091d5"
+            },
+            {
+                name: "Figma",
+                color: "#ea4c1d"
+            }
+        ]
+    },
+    {
+        title : "Boris the Teddy",
+        description : "El compañero diseñado especialmente para niños con Síndrome de Espectro Autista.",
+        urlimage : "https://i.postimg.cc/y6JRGxrt/boris.jpg",
+        urlWeb: "https://boris-the-teddy.vercel.app/",
+        urlGithub : "https://github.com/Sebastian-123-web/BoristheTeddy",
+        technology : [
+            {
+                name: "HTML",
+                color: "#e96228"
+            },
+            {
+                name: "css",
+                color: "#0091d5"
+            },
+            {
+                name: "Figma",
+                color: "#ea4c1d"
+            }
+        ]
+    }
+]
+
+const galeryProjects = document.getElementById('galery-projects')
+let insertProject = ''
+
+console.log(dataProjects)
+
+dataProjects.forEach( p => {
+    insertProject += `
+        <article class="project">
+            <div class="title-project">
+                <h3>${p.title}</h3>
+                <a href="${p.urlGithub}" target="_blank">
+                    <img src="assets/github.svg" alt="">
+                </a>
+            </div>
+
+            <a href="${p.urlWeb}" target="_blank" class="link-image">
+                <div class="img-project">
+                    <img src="${p.urlimage}" alt="">
+                </div>
+            </a>
+            
+            <p class="description-project">${p.description}</p>
+            <div class="tech-project">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>React</span>
+                <span>Node js</span>
+            </div>
+        </article>
+    `
+})
+console.log(insertProject)
+galeryProjects.innerHTML = insertProject

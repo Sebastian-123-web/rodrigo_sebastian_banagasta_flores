@@ -60,7 +60,7 @@ body {
         transform: translate(0,0);
     }
     to {
-        transform: translate(-40px,40px);
+        transform: translate(-60px,60px);
     }
 }
 @keyframes star-scroll-left-bottom {
@@ -68,7 +68,7 @@ body {
         transform: translate(0,0);
     }
     to {
-        transform: translate(-40px,-40px);
+        transform: translate(-60px,-60px);
     }
 }
 @keyframes star-scroll-right-top {
@@ -76,7 +76,7 @@ body {
         transform: translate(0,0);
     }
     to {
-        transform: translate(40px,-40px);
+        transform: translate(60px,-60px);
     }
 }
 @keyframes star-scroll-right-bottom {
@@ -84,7 +84,7 @@ body {
         transform: translate(0,0);
     }
     to {
-        transform: translate(-40px,-40px);
+        transform: translate(-60px,-60px);
     }
 }
 
@@ -104,7 +104,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     align-items: center;
 }
 .logo {
@@ -142,7 +142,7 @@ header .container {
 /* SECCION DE INFORMACION DE USUARIO */
 /* ********************************* */
 section {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 .infomation-prolife{
     display: flex;
@@ -162,7 +162,9 @@ section {
     padding-left: 100px;
 }
 .description-dev h1 {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 15px;
 }
 .name-dev{
     color: #149fca;
@@ -197,7 +199,7 @@ section {
     z-index: 9;
 }
 .btn-social:active{
-    transform: scale(1.05);
+    transform: scale(0.7);
     -webkit-box-shadow: 0px 0px 70px 2px rgb(210, 0, 98,0);
     -moz-box-shadow: 0px 0px 70px 2px rgba(210, 0, 98, 0.547);
     box-shadow: 0px 0px 70px 2px rgba(210, 0, 98, 0.547);
@@ -218,11 +220,133 @@ section {
 /*       SECCION DE PROYECTOS       */
 /* ******************************** */
 .sub-title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 .galery-projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 25px;
+    gap: 24px;
+}
+.project {
+    width: 100%;
+}
+
+.img-project {
+    overflow: hidden;
+    height: 220px;
+    border-radius: 10px;
+    margin: 0 0 25px 0;
+}
+.img-project img {
+    width: 500px;
+    object-fit: contain;
+    object-position: center center;
+}
+
+
+.title-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.title-project h3 {
+    color: #149fca;
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin: 0;
+}
+.title-project a {
+    padding: 8px 15px;
+    color: #151316;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.title-project a:hover {
+    transform: scale(1.07);
+    -webkit-box-shadow: 0px 0px 70px 2px rgba(184, 178, 181, 0.857);
+    -moz-box-shadow: 0px 0px 70px 2px rgba(184, 178, 181, 0.857);
+    box-shadow: 0px 0px 70px 2px rgba(184, 178, 181, 0.857);
+}
+.title-project a:active {
+    transform: scale(0.7);
+    -webkit-box-shadow: 0px 0px 70px 2px rgba(184, 178, 181, 0.857);
+    -moz-box-shadow: 0px 0px 70px 2px rgba(184, 178, 181, 0.857);
+    box-shadow: 0px 0px 70px 2px rgba(184, 178, 181, 0.857);
+}
+.title-project a img {
+    margin: 0;
+    width: 25px;
+    filter: invert(100%);
+}
+
+
+.description-project {
+    font-size: 0.9rem;
+    margin: 0 0 25px 0;
+}
+
+.tech-project {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.tech-project span {
+    padding: 3px 20px;
+    border: 1px solid #ffffff6a;
+    border-radius: 25px;
+    background: #151316;
+    color: #fff;
+    text-align: center;
+    transition: 0.5s;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+/* ******************* */
+/* ADAPTADO PARA MOVIL */
+/* ******************* */
+@media (max-width: 727px) {
+    header {
+        display: none;
+    }
+
+    section {
+        margin: auto;
+    }
+    section .container{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .infomation-prolife{
+        flex-direction: column;
+        margin: 0;
+    }
+    .description-dev{
+        padding: 25px;
+    }
+    .description-dev h1 {
+        text-align: center;
+        font-size: 1.7rem;
+    }
+    .description-dev p {
+        text-align: center;
+    }
+    main {
+        display: none;
+    }
 }
